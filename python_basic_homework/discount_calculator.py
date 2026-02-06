@@ -1,0 +1,11 @@
+# 문제 1-5
+price = int(input("상품 가격을 입력하세요: "))
+discount_rate = int(input("할인율을 입력ㅎ세요(%): "))
+
+discount_amount = price * discount_rate // 100 # //: 소수점 버리고 정수 부분만(몫)
+final_price = price - discount_amount
+
+print(f"원래 가격: {price}원")
+print(f"할인율: {discount_rate}%")
+print(f"할인 금액: {discount_amount}원")
+print(f"최종 가격: {final_price}원")
