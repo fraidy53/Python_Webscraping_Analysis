@@ -4,11 +4,12 @@ show databases;
 use mysql;
 create database python_db;
 create user 'python'@'%' identified by 'python';
-grant all privileges on python_db.* to 'python'@'%';
+grant all privileges on python_db.* to 'python'@'%'; # 바로 권한 업데이트
 flush privileges;
 select user, host from user;
 exit;
 
+# user 로 접속
 mysql -u python -p
 show grants for current_user;
 use python_db;
